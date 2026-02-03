@@ -8,7 +8,7 @@ def test_find_multiple_elements():
 
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
-    driver.navigate().to("https://practice.cydeo.com")
+    driver.get("https://practice.cydeo.com")
 
     all_links = driver.find_elements(By.PARTIAL_LINK_TEXT, "A")
     print(len(all_links))
@@ -17,6 +17,6 @@ def test_find_multiple_elements():
         print(link.text)
 
     
-    time.sleep(3)
+    time.sleep(10)
 
     driver.quit()

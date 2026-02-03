@@ -16,6 +16,9 @@ def test_find_multiple_elements():
     for link in all_links:
         print(link.text)
 
+    first_item = all_links[0]
+    print(first_item.text)
+
     
     time.sleep(10)
 

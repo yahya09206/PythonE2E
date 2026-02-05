@@ -12,6 +12,7 @@ def test_find_by_id_name_link_text():
 
 	# name: email, pass, login
 	email_box = driver.find_element(By.ID, "email")
+	time.sleep(3)
 	email_box.send_keys("some email here")
 	time.sleep(3)
 
